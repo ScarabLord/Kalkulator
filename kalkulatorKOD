@@ -1,0 +1,77 @@
+import java.util.Scanner;
+public class Kalkulator {
+	public static void main(String args[]){
+		
+		Scanner skener = new Scanner(System.in);
+		int num1, num2, answerNum;
+		answerNum = 0;
+		
+		boolean  calc = false;
+		int x;
+	
+		System.out.println("Enter first number: ");
+		num1 = skener.nextInt();
+		
+		System.out.println("Enter your second number: ");
+		num2 = skener.nextInt();
+		
+		System.out.println("What operator would you like to use?");
+		System.out.println("For addition please type in number 1");
+		System.out.println("For subtraction please type in number 2");
+		System.out.println("For multiplication please type in number 3");
+		System.out.println("For division please type in number 4");
+		x = skener.nextInt();
+		
+		/*
+		if (x == 1)
+		{
+			answerNum = num1 + num2;
+		}
+		if (x == 2)
+		{
+			answerNum = num1 - num2;
+		}
+		if (x == 3)
+		{
+			answerNum = num1 * num2;
+		}
+		if (x == 4)
+		{
+			answerNum = num1 / num2;
+		}
+	
+		System.out.println(answerNum);
+		 */
+				
+		  switch(x)
+	        {
+	            case 1: x=1;
+	                answerNum = num1 + num2;
+	                calc= true;
+	                break;
+	            case 2: x=2;
+	                answerNum = num1 - num2;
+	                calc= true;
+	                break;
+	            case 3: x=3;
+	                answerNum = num1 * num2;
+	                calc= true;
+	                break;
+	            case 4: x=4;
+	                answerNum = num1 / num2;
+	                calc= true;
+	                break;
+	          
+	         }
+	        if (calc)
+	        {
+	            System.out.println(answerNum);
+	        }
+	        else
+	        {
+	            System.out.println("Operator number was not valid!");
+				}
+		}
+	}
+	
+	
